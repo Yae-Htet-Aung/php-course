@@ -1,0 +1,60 @@
+# php syntax
+  <?php ... ?>
+  <? ... ?>     ** require to edit php.ini // location: xampp/php/php.ini // change short_open_tag=On
+
+  ** for php codes only, no need to use ?>
+  ** for php and html, need to use ?>
+
+# php comments
+  // single line 
+  #  single line
+  /* multiline || inline */
+
+# output methods
+  for string
+    echo ...;   // accept multiple values if it has no parenthesis
+    echo (...); // accept single values
+    print();    ** slower than echo
+    die()       ** last line of php codes
+
+  for string, array, object (for debugging purpose only)
+    print_r();
+    var_dump();
+
+# statement and expressions
+  $name = "Yae"   => statement
+  $name           => variable
+  =               => operator
+  "Yae"           => expression
+
+# php datatypes 
+  string, integer, float || double, boolean, null, array, object
+
+# string
+  '' || "" 
+  .  => concat 
+  '' needs . to concat $variables and strings.
+  "" doesn't need to do so.
+  using {$variable} is better.
+
+# character escape
+  \  => escape
+
+# string functions
+  strlen()
+  
+* str_replace doesn't actually change current values
+
+# numbers
+  int, float, bool
+
+# number checking functions
+  is_int(); || is_integer();
+  is_double(); || is_float();
+  is_numeric();
+  (int) $string   => change string to int ("22" >> 22)
+  (int) $float   => change float to int (22.2 >> 22)
+
+# boolean and null checking functions
+  is_bool();
+  is_null();
